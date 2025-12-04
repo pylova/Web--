@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <link href="style.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style type="text/css">
     header { 
     background-color: white;
@@ -17,48 +18,93 @@
     font-family: Arial;
     margin: 15px auto;
     font-weight: bold;
-    }  
-    </style>
+    } 
+
+    /* Add a class for styling the navigation links as buttons */
+    .read-more-button {
+        display: inline-block; /* Make it behave like a block for padding/margin */
+        padding: 10px 15px;
+        background-color: #007bff; /* Example color */
+        color: white;
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+</style>
+
+<script
+    async
+    src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+    crossorigin="anonymous"
+></script>
+<script>
+    window.googletag = window.googletag || { cmd: [] };
+    googletag.cmd.push(function () {
+        googletag
+            .defineSlot("/6075/diana_test_web", [728, 90], "div-gpt-ad-1764760155015-0")
+            .addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_GA4_ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-YOUR_GA4_ID");
+</script>
 </head>
 
 <body>
     <header>
-    <div class="header">
-         <div class="menu"> 
-         <ul>
-         <li><img src="logo.png" alt="Logo" style="max-height: 40px;max-width: 40px;"></li>
-         <li><a id="News" href="index.html">Latest Posts</a></li>
-			<li><a id="About" href="about.html">About us</a></li>
-			<li><a id="Account" href="account.html">Your Account</a></li>
-			<li><a id="Register" href="sign.html">Sign Up</a></li>
-			<li><a id="LogIn" href="login.html">Log In</a></li>
-         </ul>
-         </div>
-    </div>
+        <nav class="menu"> 
+            <ul>
+                <li><img src="logo.png" alt="Logo" class="site-logo"></li> 
+                
+                <li><a href="index.html">Latest Posts</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="account.html">Your Account</a></li>
+                <li><a href="sign.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </nav>
     </header>
 
-     <div class="articles">
-     <article>
-     <h2>Japan</h2>
-     <main><img src="japan.jpg" alt="japan">
-     <p>Japan, also known as the "Land of the Rising Sun," is situated in East Asia on an archipelago composed of four main islands...</p>
-     <button><a id="News1" href="News1.html">Read more</a></button></main>
-     </article>
+    <main class="articles">
+        <article>
+            <h2>Japan</h2>
+            <img src="japan.jpg" alt="A scenic view of Mount Fuji, Japan.">
+            <p>Japan, also known as the "Land of the Rising Sun," is situated in East Asia on an archipelago composed of four main islands...</p>
+            
+            <a href="News1.html" class="read-more-button">Read more</a>
+        </article>
+        
+        <p>Sponsored by</p>
+        <div id="div-gpt-ad-1764760155015-0" class="ad-slot-container">
+            <script>
+                googletag.cmd.push(function () {
+                    googletag.display("div-gpt-ad-1764760155015-0");
+                });
+            </script>
+        </div>
+        <article>
+            <h2>Germany</h2>
+            <img src="germany.jpg" alt="A historic castle in Germany.">
+            <p>Germany, located in Central Europe, is a country known for its rich history, vibrant culture, and technological advancements...</p>
+            <a href="News2.html" class="read-more-button">Read more</a>
+        </article>
 
-     <article>
-     <h2>Germany</h2>
-     <main><img src="germany.jpg" alt="germany">
-     <p>Germany, located in Central Europe, is a country known for its rich history, vibrant culture, and technological advancements...</p>
-     <button><a id="News2" href="News2.html">Read more</a></button></main>
-     </article>
+        <article>
+            <h2>Australia</h2>
+            <img src="australia.jpg" alt="The Sydney Opera House and Harbour Bridge, Australia.">
+            <p>Australia, situated in the Southern Hemisphere, is a diverse and expansive country known for its unique wildlife, stunning landscapes, and vibrant cities. It is home to the Great Barrier Reef, a UNESCO World Heritage Site, and the iconic Sydney Opera House...</p>
+            <a href="News3.html" class="read-more-button">Read more</a>
+        </article>
+    </main>
 
-     <article>
-     <h2>Australia</h2>
-     <main><img src="australia.jpg" alt="australia">
-     <p>Australia, situated in the Southern Hemisphere, is a diverse and expansive country known for its unique wildlife, stunning landscapes, and vibrant cities. It is home to the Great Barrier Reef, a UNESCO World Heritage Site, and the iconic Sydney Opera House...</p>
-     <button><a id="News3" href="News3.html">Read more</a></button></main>
-    </article>
-    </div>
+    </body>
 
-</body>
 </html>
